@@ -32,8 +32,8 @@ end
 
 get("/random/results") do
 
-  @mininput = params.fetch("user_min").to_i
-  @maxinput = params.fetch("user_max").to_i
+  @mininput = params.fetch("user_min").to_f
+  @maxinput = params.fetch("user_max").to_f
 
   @result = rand(@mininput..@maxinput)
 
